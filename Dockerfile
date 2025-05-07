@@ -10,6 +10,10 @@ COPY package*.json ./
 # Cài đặt các dependencies
 RUN npm install
 
+
+# Cài PM2 toàn cục
+RUN npm install -g pm2
+
 # Sao chép toàn bộ mã nguồn vào container
 COPY . .
 
