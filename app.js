@@ -6,7 +6,7 @@ const logger = require("morgan");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
-dotenv.config({ path: "./config/config.env" });
+dotenv.config({ path: ".env" });
 
 const app = express();
 app.use(

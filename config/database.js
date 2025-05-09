@@ -1,24 +1,13 @@
-//server current
-// mysqlConfig = {
-//     connectionLimit: 100,
-//     host: "127.0.0.1",
-//     user: "root",
-//     password: "123456",
-//     port: 3306,
-//     database: "devops_testing",
-//     charset: "utf8",
-// };
-
-
-//remote 
+//remote
+console.log("process", process)
 mysqlConfig = {
-    connectionLimit: 100,
-    host: "3.104.104.119",
-    user: "shuket",
-    password: "123456",
-    port: 3306,
-    database: "devops_testing",
-    charset: "utf8",
+   connectionLimit: 100,
+   port: 3306,
+   charset: "utf8",
+   host: process.env.MYSQL_HOST, 
+   user: process.env.MYSQL_USER,
+   password: process.env.MYSQL_PASSWORD,
+   database: process.env.MYSQL_DB,
 };
 // mySQL pool
 let mysql = require("mysql2/promise");
