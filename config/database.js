@@ -1,5 +1,4 @@
 //remote
-console.log("process", process)
 mysqlConfig = {
    connectionLimit: 100,
    port: 3306,
