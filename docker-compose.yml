@@ -11,6 +11,7 @@ services:
       - MYSQL_USER=root
       - MYSQL_PASSWORD=123456
       - MYSQL_DB=projectdevops
+      - MYSQL_PORT=3307
     depends_on:
       - mysql
     networks:

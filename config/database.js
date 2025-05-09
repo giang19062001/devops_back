@@ -2,7 +2,7 @@
 
 mysqlConfig = {
    connectionLimit: 100,
-   port: 3306,
+   port: process.env.MYSQL_PORT,
    charset: "utf8",
    host: process.env.MYSQL_HOST, 
    user: process.env.MYSQL_USER,
