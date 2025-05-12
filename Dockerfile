@@ -1,5 +1,5 @@
 # Chọn image Node.js
-FROM node:20
+FROM node:18
 
 # Set thư mục làm việc trong container cua docker
 WORKDIR /app
