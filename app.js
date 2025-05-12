@@ -50,7 +50,7 @@ app.get("/products", async (req, res) => {
    res.status(200).json(data);
 });
 app.get("/user", async (req, res) => {
-   res.status(200).json({ username: "Ngo Hoang Giang" });
+   res.status(200).json({ username: "Giang Shuket" });
 });
 
 app.use(function (req, res, next) {
