@@ -45,6 +45,10 @@ app.use("/public", express.static(path.join(__dirname, "/public")));
 
 const { mysqlPool } = require("./config/database.js");
 
+app.get("/", (req, res) => {
+   console.log("process.env.PORT", process.env.PORT);
+   res.status(200).json({});
+});
 app.get("/products", async (req, res) => {
    const [data] = await mysqlPool.query(" SELECT * FROM products");
    res.status(200).json(data);
@@ -64,6 +68,5 @@ app.use(function (err, req, res, next) {
    res.status(err.status || 500);
    res.render("error");
 });
-console.log("PORT =>",process.env.PORT)
 
 module.exports = app;
