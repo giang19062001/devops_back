@@ -54,7 +54,7 @@ app.get("/products", async (req, res) => {
    res.status(200).json(data);
 });
 app.get("/user", async (req, res) => {
-   res.status(200).json({ username: "Giang Shuket", port: process.env.PORT });
+   res.status(200).json({ username: "Giang Ngo", port: process.env.PORT });
 });
 
 app.use(function (req, res, next) {
